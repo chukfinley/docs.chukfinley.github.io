@@ -1,0 +1,9 @@
+site_name: Chuks Docs/Notes
+site_url: https://docs.hackerman-1337.xyz
+theme:
+  name: material
+  logo: https://hackerman-1337.xyz/favicon.ico
+  favicon: https://hackerman-1337.xyz/favicon.ico
+
+repo_url: https://git.chuk.dev/chuk/docs/
+repo_name: Docs on Gitea
