@@ -7,19 +7,19 @@ and ubuntu or debian vps with a static ip
 ### Install
 
 ##### update and upgrade os and install docker and docker-compose
-```
+```bash
 sudo apt update 
 sudo apt upgrade
 sudo apt install docker docker.io docker-compose apparmor
 ```
 ##### setup docker compose file
 edit docker-compose.yml
-```
+```bash
 nano docker-compose.yml
 ```
 ##### paste
 
-```
+```bash
 version: "3"
 
 networks:
@@ -46,11 +46,11 @@ services:
 ```
 ##### start the docker container
 
-```
+```bash
 docker-compose up -d
 ```
 ##### setup apache config chnage the domain and subdomain how you like 
-```
+```bash
 #git.yourdomain.com
 <VirtualHost *:443>
     ServerName git.yourdomain.com

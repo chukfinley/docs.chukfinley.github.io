@@ -1,22 +1,45 @@
-# Welcome to Chuk Docs
+# 📚 Welcome to Chuk Docs
 
-This is the home page for Chuks documentation. Below you'll find links to all available documents:
+🚀 Documentation for various installation and configuration procedures.
 
-## Available Documents
+## 📑 Categories
 
-- [Securing SSH on a Debian Server](Installation/SSH.md)
-- [Shopware Installation](Installation/Shopware.md)
+### Development 💻
 
-## How to Use This Documentation
+- 📝 [Git Version Control](Installation/git.md)
+- 👨‍💻 [Programming Languages](Installation/languages.md)
 
-1. Use the navigation menu on the left to browse through different sections.
-2. Use the search bar at the top to find specific topics.
-3. Click on any document link above to view its contents.
+### Other 📋
 
-## Contributing
+- 🐳 [NVIDIA Docker Setup](Installation/nvidiagpu/nvida-docker.md)
+- 🎵 [PyAudio Setup](Installation/python/pyaudio.md)
 
-If you'd like to contribute [please contact me](contact.md).
+### Remote Tools 🔄
 
-## Need Help?
+- 🖥️ [RustDesk Remote Desktop](Installation/rustdesk.md)
 
-If you need further assistance, please [contact us](contact.md) or check our [FAQ](faq.md) section.
+### Security 🔒
+
+- 🔑 [SSH Configuration](Installation/SSH.md)
+- 🔒 [SSL Certificates](Installation/certs.md)
+
+### System ⚙️
+
+- 🎮 [AMD GPU Drivers](Installation/amdgpu/amdgpuinstall.md)
+- 💻 [QEMU Virtualization](Installation/qemu.md)
+
+### Web Services 🌐
+
+- 🌐 [Apache Server](Installation/apache.md)
+- 🐙 [Gitea Git Server](Installation/gitea.md)
+- ☁️ [Seafile Cloud](Installation/seafile.md)
+- 🛍️ [Shopware E-Commerce](Installation/Shopware.md)
+
+## 🔍 Quick Links
+
+- 📞 [Contact Support](contact.md)
+- ❓ [Frequently Asked Questions](faq.md)
+
+---
+
+*🔄 Last updated: 2024-12-24 02:51*
