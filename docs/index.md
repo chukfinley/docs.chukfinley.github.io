@@ -11,6 +11,8 @@
 
 ### Other 📋
 
+- 📄 [Contact](contact.md)
+- 📄 [Faq](faq.md)
 - 🐳 [NVIDIA Docker Setup](Installation/nvidiagpu/nvida-docker.md)
 - 🎵 [PyAudio Setup](Installation/python/pyaudio.md)
 
@@ -42,4 +44,4 @@
 
 ---
 
-*🔄 Last updated: 2024-12-24 02:51*
+*🔄 Last updated: 2025-01-30 10:53*
