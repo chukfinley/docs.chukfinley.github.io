@@ -15,6 +15,7 @@
 - 📄 [Faq](faq.md)
 - 🐳 [NVIDIA Docker Setup](Installation/nvidiagpu/nvida-docker.md)
 - 🎵 [PyAudio Setup](Installation/python/pyaudio.md)
+- 📄 [Spicetify](spicetify.md)
 
 ### Remote Tools 🔄
 
@@ -44,4 +45,4 @@
 
 ---
 
-*🔄 Last updated: 2025-01-30 10:53*
+*🔄 Last updated: 2025-04-07 03:50*
