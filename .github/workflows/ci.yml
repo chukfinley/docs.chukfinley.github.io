@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
   push:
@@ -13,23 +13,35 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Configure Git Credentials
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - uses: actions/setup-python@v5
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Set Cache ID
-        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+
+      - name: Cache pip dependencies
+        id: cache-pip
+        uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
-          path: .cache
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            mkdocs-material-
+            ${{ runner.os }}-pip-
+
       - name: Install Dependencies
-        run: pip install mkdocs-material
-      - name: Deploy to GitHub Pages
+        run: |
+          pip install --upgrade pip
+          # Install your required plugins and material theme
+          pip install mkdocs-material \
+                      mkdocs-git-revision-date-localized-plugin \
+                      mkdocs-minify-plugin
+
+      - name: Build and Deploy with MkDocs
         run: mkdocs gh-deploy --force
