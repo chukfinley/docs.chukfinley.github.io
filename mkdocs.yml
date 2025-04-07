@@ -1,9 +1,9 @@
 site_name: 📚 Chuks Docs/Notes
-site_url: http://docs.chukfinley.github.io/
+site_url: https://chukfinley.github.io/docs/
 theme:
   name: material
-  logo: http://docs.chukfinley.github.io/favicon.ico
-  favicon: http://docs.chukfinley.github.io/favicon.ico
+  logo: https://chukfinley.github.io/docs/favicon.ico
+  favicon: https://chukfinley.github.io/docs/favicon.ico
   palette:
     scheme: slate
     primary: black
