@@ -85,3 +85,5 @@ nav:
           - 🖥️ RustDesk: Installation/rustdesk.md
       - 🐍 Python:
           - 🔊 PyAudio: Installation/python/pyaudio.md
+      - Other:
+          - Spicify: Installation/spicetify.md
