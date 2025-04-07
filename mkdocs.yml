@@ -1,9 +1,9 @@
 site_name: 📚 Chuks Docs/Notes
-site_url: https://docs.hackerman-1337.xyz
+site_url: http://docs.chukfinley.github.io/
 theme:
   name: material
-  logo: https://hackerman-1337.xyz/favicon.ico
-  favicon: https://hackerman-1337.xyz/favicon.ico
+  logo: http://docs.chukfinley.github.io/favicon.ico
+  favicon: http://docs.chukfinley.github.io/favicon.ico
   palette:
     scheme: slate
     primary: black
@@ -13,9 +13,10 @@ theme:
   palette_primary: black
   css_minify: true
   extra_css:
-  - https://gistcdn.githack.com/chrisrhymes/20050e61501c94766f56d5b1d4c527c6/raw/cd358b7ad37391ff24c40f230f42cd907c33f657/custom.css
+    - https://gistcdn.githack.com/chrisrhymes/20050e61501c94766f56d5b1d4c527c6/raw/cd358b7ad37391ff24c40f230f42cd907c33f657/custom.css
   extra:
-    css: "\n                :root {\n                    --md-default-bg-color: #1a1a1a;\n\
+    css:
+      "\n                :root {\n                    --md-default-bg-color: #1a1a1a;\n\
       \                    --md-default-fg-color: #ffffff;\n                    --md-default-fg-color--light:\
       \ #f5f5f5;\n                    --md-default-fg-color--lighter: #eeeeee;\n \
       \                   --md-default-fg-color--lightest: #e0e0e0;\n            \
@@ -26,61 +27,61 @@ theme:
       \                 --md-primary-fg-color--dark: #2d2d2d;\n                }\n\
       \                "
   features:
-  - navigation.instant
-  - navigation.tracking
-  - navigation.tabs
-  - navigation.sections
-  - navigation.expand
-  - navigation.indexes
-  - navigation.path
-  - toc.follow
-  - search.suggest
-  - search.highlight
-  - content.code.copy
-  - content.code.annotate
-  - content.tabs.link
-  - toc.follow
-  - navigation.top
-  - navigation.footer
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+    - navigation.top
+    - navigation.footer
   icon:
     repo: fontawesome/brands/git-alt
 markdown_extensions:
-- pymdownx.highlight
-- pymdownx.superfences
-- pymdownx.tabbed
-- pymdownx.tasklist
-- pymdownx.details
-- admonition
-- toc
-- toc:
-    permalink: true
-repo_url: https://git.chuk.dev/chuk/docs/
-repo_name: 🔧 Docs on Gitea
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.details
+  - admonition
+  - toc
+  - toc:
+      permalink: true
+repo_url: https://github.com/chukfinley/docs.chukfinley.github.io
+repo_name: 🔧 Docs on Github
 plugins:
-- search
-- tags
-- minify
-- git-revision-date-localized:
-    type: datetime
+  - search
+  - tags
+  - minify
+  - git-revision-date-localized:
+      type: datetime
 nav:
-- 🏠 Home: index.md
-- 📦 Installation:
-  - 🌐 Web Services:
-    - 🌟 Apache: Installation/apache.md
-    - 🌊 Seafile: Installation/seafile.md
-    - 🛍️ Shopware: Installation/Shopware.md
-    - 🐙 Gitea: Installation/gitea.md
-  - 💻 Development:
-    - 📝 Git: Installation/git.md
-    - 🔤 Languages: Installation/languages.md
-  - 🔒 Security:
-    - 🔑 SSH: Installation/SSH.md
-    - 📜 Certificates: Installation/certs.md
-  - ⚙️ System:
-    - 💾 QEMU: Installation/qemu.md
-    - 🎮 AMD GPU: Installation/amdgpu/amdgpuinstall.md
-    - 🎯 NVIDIA Docker: Installation/nvidiagpu/nvida-docker.md
-  - 🔄 Remote Tools:
-    - 🖥️ RustDesk: Installation/rustdesk.md
-  - 🐍 Python:
-    - 🔊 PyAudio: Installation/python/pyaudio.md
+  - 🏠 Home: index.md
+  - 📦 Installation:
+      - 🌐 Web Services:
+          - 🌟 Apache: Installation/apache.md
+          - 🌊 Seafile: Installation/seafile.md
+          - 🛍️ Shopware: Installation/Shopware.md
+          - 🐙 Gitea: Installation/gitea.md
+      - 💻 Development:
+          - 📝 Git: Installation/git.md
+          - 🔤 Languages: Installation/languages.md
+      - 🔒 Security:
+          - 🔑 SSH: Installation/SSH.md
+          - 📜 Certificates: Installation/certs.md
+      - ⚙️ System:
+          - 💾 QEMU: Installation/qemu.md
+          - 🎮 AMD GPU: Installation/amdgpu/amdgpuinstall.md
+          - 🎯 NVIDIA Docker: Installation/nvidiagpu/nvida-docker.md
+      - 🔄 Remote Tools:
+          - 🖥️ RustDesk: Installation/rustdesk.md
+      - 🐍 Python:
+          - 🔊 PyAudio: Installation/python/pyaudio.md
