@@ -10,7 +10,7 @@
 - 👨‍💻 [Programming Languages](Installation/languages.md)
 
 ### Other 📋
-
+- ☁️  [Cloudflare Images](cloudflare-images.md)
 - 📄 [Contact](contact.md)
 - 📄 [Faq](faq.md)
 - 🐳 [NVIDIA Docker Setup](Installation/nvidiagpu/nvida-docker.md)
