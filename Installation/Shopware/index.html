@@ -1,0 +1,1977 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://chukfinley.github.io/docs/Installation/Shopware/">
+      
+      
+        <link rel="prev" href="../seafile/">
+      
+      
+        <link rel="next" href="../gitea/">
+      
+      
+      <link rel="icon" href="https://chukfinley.github.io/docs/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>🛍️ Shopware - 📚 Chuks Docs/Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#shopware-installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="📚 Chuks Docs/Notes" class="md-header__button md-logo" aria-label="📚 Chuks Docs/Notes" data-md-component="logo">
+      
+  <img src="https://chukfinley.github.io/docs/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            📚 Chuks Docs/Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🛍️ Shopware
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/chukfinley/docs.chukfinley.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🔧 Docs on Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏠 Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../apache/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  📦 Installation
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="📚 Chuks Docs/Notes" class="md-nav__button md-logo" aria-label="📚 Chuks Docs/Notes" data-md-component="logo">
+      
+  <img src="https://chukfinley.github.io/docs/favicon.ico" alt="logo">
+
+    </a>
+    📚 Chuks Docs/Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/chukfinley/docs.chukfinley.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    🔧 Docs on Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏠 Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    📦 Installation
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📦 Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    🌐 Web Services
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            🌐 Web Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apache/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🌟 Apache
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seafile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🌊 Seafile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    🛍️ Shopware
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    🛍️ Shopware
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-updates-and-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Updates and stuff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-php-81" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing php 8.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-mariadbserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      install mariadbserver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-mysql-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run mysql setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-database-replace-yourpassword-with-a-secure-password-and-write-it-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup database replace YOURPASSWORD with a secure password and write it down!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-etcphp81apache2phpini" class="md-nav__link">
+    <span class="md-ellipsis">
+      edit /etc/php/8.1/apache2/php.ini
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-values-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      set values to
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Composer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Composer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-ssl" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable ssl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-ip-to-domain-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      set ip to domain cloudflare
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-your-ssl-crt-and-key-from-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      get your ssl crt and key from cloudflare
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apache-config-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apache config, edit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apache config, edit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-port-443" class="md-nav__link">
+    <span class="md-ellipsis">
+      open port 443
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      get installer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-installer-write-premission" class="md-nav__link">
+    <span class="md-ellipsis">
+      set installer write premission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-to-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      go to url
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-the-installer-when-done-you-get-a-404-dont-worry" class="md-nav__link">
+    <span class="md-ellipsis">
+      follow the installer when done you get a 404 dont worry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goto" class="md-nav__link">
+    <span class="md-ellipsis">
+      goto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      and run
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#now-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      now edit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      and change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to" class="md-nav__link">
+    <span class="md-ellipsis">
+      to
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-apache2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#got-to-yourdomaincom" class="md-nav__link">
+    <span class="md-ellipsis">
+      got to yourdomain.com
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block-port-80" class="md-nav__link">
+    <span class="md-ellipsis">
+      block port 80
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      edit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitea/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🐙 Gitea
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    💻 Development
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            💻 Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📝 Git
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../languages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔤 Languages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    🔒 Security
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            🔒 Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SSH/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔑 SSH
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../certs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📜 Certificates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    ⚙️ System
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            ⚙️ System
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qemu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    💾 QEMU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../amdgpu/amdgpuinstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎮 AMD GPU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nvidiagpu/nvida-docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎯 NVIDIA Docker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    🔄 Remote Tools
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            🔄 Remote Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rustdesk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🖥️ RustDesk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    🐍 Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            🐍 Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/pyaudio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🔊 PyAudio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Other
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Other
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spicetify/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spicify
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-updates-and-stuff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Updates and stuff
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-php-81" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing php 8.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-mariadbserver" class="md-nav__link">
+    <span class="md-ellipsis">
+      install mariadbserver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-mysql-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run mysql setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-database-replace-yourpassword-with-a-secure-password-and-write-it-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup database replace YOURPASSWORD with a secure password and write it down!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-etcphp81apache2phpini" class="md-nav__link">
+    <span class="md-ellipsis">
+      edit /etc/php/8.1/apache2/php.ini
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-values-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      set values to
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-composer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Composer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Install Composer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-ssl" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable ssl
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-ip-to-domain-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      set ip to domain cloudflare
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-your-ssl-crt-and-key-from-cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      get your ssl crt and key from cloudflare
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apache-config-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apache config, edit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Apache config, edit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-port-443" class="md-nav__link">
+    <span class="md-ellipsis">
+      open port 443
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-apache2" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      get installer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-installer-write-premission" class="md-nav__link">
+    <span class="md-ellipsis">
+      set installer write premission
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-to-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      go to url
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-the-installer-when-done-you-get-a-404-dont-worry" class="md-nav__link">
+    <span class="md-ellipsis">
+      follow the installer when done you get a 404 dont worry
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goto" class="md-nav__link">
+    <span class="md-ellipsis">
+      goto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      and run
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#now-edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      now edit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      and change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to" class="md-nav__link">
+    <span class="md-ellipsis">
+      to
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-apache2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart apache2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#got-to-yourdomaincom" class="md-nav__link">
+    <span class="md-ellipsis">
+      got to yourdomain.com
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block-port-80" class="md-nav__link">
+    <span class="md-ellipsis">
+      block port 80
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit" class="md-nav__link">
+    <span class="md-ellipsis">
+      edit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="shopware-installation">Shopware installation<a class="headerlink" href="#shopware-installation" title="Permanent link">&para;</a></h1>
+<h4 id="install-updates-and-stuff">Install Updates and stuff<a class="headerlink" href="#install-updates-and-stuff" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>zsh<span class="w"> </span>zsh-syntax-highlighting<span class="w"> </span>zsh-autosuggestions<span class="w"> </span>tree<span class="w"> </span>ufw<span class="w"> </span>htop<span class="w"> </span>ncdu<span class="w"> </span>yt-dlp<span class="w"> </span>btop<span class="w"> </span>thefuck<span class="w"> </span>python3<span class="w"> </span>python3-pip<span class="w"> </span>neofetch<span class="w"> </span>python3-pip<span class="w"> </span>jq<span class="w"> </span>git<span class="w"> </span>aria2<span class="w"> </span>cmake<span class="w"> </span>make<span class="w"> </span>gcc<span class="w"> </span>build-essential<span class="w"> </span>docker<span class="w"> </span>docker.io<span class="w"> </span>docker-compose<span class="w"> </span>tmux<span class="w"> </span>net-tools<span class="w"> </span>curl<span class="w"> </span>wget<span class="w"> </span>-y
+sudo<span class="w"> </span>sh<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;&gt; /etc/motd&#39;</span>
+chmod<span class="w"> </span>-x<span class="w"> </span>/etc/update-motd.d/*
+
+sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/^PrintMotd.*/PrintMotd no/&#39;</span><span class="w"> </span>/etc/ssh/sshd_config
+sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/^PrintLastLog.*/PrintLastLog no/&#39;</span><span class="w"> </span>/etc/ssh/sshd_config
+<span class="k">if</span><span class="w"> </span>!<span class="w"> </span>grep<span class="w"> </span>-q<span class="w"> </span><span class="s2">&quot;^PrintMotd no&quot;</span><span class="w"> </span>/etc/ssh/sshd_config<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;PrintMotd no&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/ssh/sshd_config
+<span class="k">fi</span>
+<span class="k">if</span><span class="w"> </span>!<span class="w"> </span>grep<span class="w"> </span>-q<span class="w"> </span><span class="s2">&quot;^PrintLastLog no&quot;</span><span class="w"> </span>/etc/ssh/sshd_config<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;PrintLastLog no&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/ssh/sshd_config
+<span class="k">fi</span>
+
+ufw<span class="w"> </span>allow<span class="w"> </span>openssh
+ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">22</span>
+ufw<span class="w"> </span><span class="nb">enable</span>
+systemctl<span class="w"> </span>restart<span class="w"> </span>sshd
+sudo<span class="w"> </span>dpkg-reconfigure<span class="w"> </span>-plow<span class="w"> </span>unattended-upgrades
+systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>unattended-upgrades.service
+</code></pre></div>
+<h4 id="installing-php-81">Installing php 8.1<a class="headerlink" href="#installing-php-81" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>php8.1<span class="w"> </span>php8.1-common<span class="w"> </span>php8.1-mysql<span class="w"> </span>php8.1-xml<span class="w"> </span>php8.1-xmlrpc<span class="w"> </span>php8.1-curl<span class="w"> </span>php8.1-gd<span class="w"> </span>php8.1-imagick<span class="w"> </span>php8.1-cli<span class="w"> </span>php8.1-intl<span class="w"> </span>php8.1-zip<span class="w"> </span>php8.1-mbstring<span class="w"> </span>-y
+</code></pre></div>
+<h4 id="install-mariadbserver">install mariadbserver<a class="headerlink" href="#install-mariadbserver" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mariadb-server<span class="w"> </span>mariadb-client<span class="w"> </span>-y
+</code></pre></div>
+<h4 id="run-mysql-setup">Run mysql setup<a class="headerlink" href="#run-mysql-setup" title="Permanent link">&para;</a></h4>
+<p><div class="highlight"><pre><span></span><code>mysql_secure_installation
+</code></pre></div>
+<img alt="grafik" src="https://gist.github.com/assets/77645077/df3e878f-d797-48f2-91d9-6393e8b3a370" /></p>
+<h4 id="setup-database-replace-yourpassword-with-a-secure-password-and-write-it-down">Setup database replace YOURPASSWORD with a secure password and write it down!<a class="headerlink" href="#setup-database-replace-yourpassword-with-a-secure-password-and-write-it-down" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>mariadb<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p
+CREATE<span class="w"> </span>DATABASE<span class="w"> </span>shopware<span class="p">;</span>
+GRANT<span class="w"> </span>ALL<span class="w"> </span>PRIVILEGES<span class="w"> </span>ON<span class="w"> </span>shopware.*<span class="w"> </span>TO<span class="w"> </span><span class="s1">&#39;shopware_user&#39;</span>@<span class="s1">&#39;localhost&#39;</span><span class="w"> </span>IDENTIFIED<span class="w"> </span>BY<span class="w"> </span><span class="s1">&#39;YOURPASSWORD&#39;</span><span class="p">;</span>
+FLUSH<span class="w"> </span>PRIVILEGES<span class="p">;</span>
+EXIT<span class="p">;</span>
+</code></pre></div>
+<h4 id="edit-etcphp81apache2phpini">edit <code>/etc/php/8.1/apache2/php.ini</code><a class="headerlink" href="#edit-etcphp81apache2phpini" title="Permanent link">&para;</a></h4>
+<h4 id="set-values-to">set values to<a class="headerlink" href="#set-values-to" title="Permanent link">&para;</a></h4>
+<p><code>memory_limit = 512M</code> <br>
+<code>post_max_size = 32M</code> <br>
+<code>upload_max_filesize = 32M</code> <br>
+<code>opcache.memory_consumption = 256</code> <br></p>
+<h3 id="install-composer">Install Composer<a class="headerlink" href="#install-composer" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>php<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot;</span>
+php<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;edb40769019ccf227279e3bdd1f5b2e9950eb000c3233ee85148944e555d97be3ea4f40c3c2fe73b22f875385f6a5155&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot;</span>
+php<span class="w"> </span>composer-setup.php
+php<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;unlink(&#39;composer-setup.php&#39;);&quot;</span>
+sudo<span class="w"> </span>mv<span class="w"> </span>composer.phar<span class="w"> </span>/usr/bin/composer
+</code></pre></div>
+<h4 id="enable-ssl">enable ssl<a class="headerlink" href="#enable-ssl" title="Permanent link">&para;</a></h4>
+<p><code>sudo a2enmod ssl</code></p>
+<h4 id="set-ip-to-domain-cloudflare">set ip to domain cloudflare<a class="headerlink" href="#set-ip-to-domain-cloudflare" title="Permanent link">&para;</a></h4>
+<p><img alt="grafik" src="https://gist.github.com/assets/77645077/f50a562e-ce38-4550-b0b0-a317d837c5bd" /></p>
+<h4 id="get-your-ssl-crt-and-key-from-cloudflare">get your ssl crt and key from cloudflare<a class="headerlink" href="#get-your-ssl-crt-and-key-from-cloudflare" title="Permanent link">&para;</a></h4>
+<p><img alt="grafik" src="https://gist.github.com/assets/77645077/f3d87c86-0385-4ff5-b7d1-284defb9298a" />
+<img alt="grafik" src="https://gist.github.com/assets/77645077/b2a64d1f-52f4-4254-a3a2-e67b1fc7a3cb" />
+<img alt="grafik" src="https://gist.github.com/assets/77645077/38a2a13a-4328-4082-a1d4-6d75c2dc714f" />
+and put it in the right place <br>
+<code>mkdir -p /etc/ssl/yourdomain.com</code> <br>
+<code>/etc/ssl/yourdomain.com/cert.crt</code> <br>
+<code>/etc/ssl/yourdomain.com/cert.key</code> <br></p>
+<h3 id="apache-config-edit">Apache config, edit<a class="headerlink" href="#apache-config-edit" title="Permanent link">&para;</a></h3>
+<p><code>/etc/apache2/sites-available/000-default.conf</code></p>
+<div class="highlight"><pre><span></span><code>&lt;VirtualHost<span class="w"> </span>*:443&gt;
+<span class="w">    </span>ServerName<span class="w"> </span>yourdomain.com
+<span class="w">    </span>DocumentRoot<span class="w"> </span>/var/www/html
+
+<span class="w">    </span>SSLEngine<span class="w"> </span>on
+<span class="w">    </span>SSLCertificateFile<span class="w"> </span>/etc/ssl/yourdomain.com/cert.crt
+<span class="w">    </span>SSLCertificateKeyFile<span class="w"> </span>/etc/ssl/yourdomain.com/cert.key
+<span class="w">    </span>SSLCertificateChainFile<span class="w"> </span>/etc/ssl/yourdomain.com/cert.crt
+
+<span class="w">    </span>&lt;Directory<span class="w"> </span>/var/www/html&gt;
+<span class="w">        </span>Options<span class="w"> </span>Indexes<span class="w"> </span>FollowSymLinks<span class="w"> </span>MultiViews
+<span class="w">        </span>AllowOverride<span class="w"> </span>All
+<span class="w">        </span>Require<span class="w"> </span>all<span class="w"> </span>granted
+<span class="w">    </span>&lt;/Directory&gt;
+
+<span class="w">    </span>ErrorLog<span class="w"> </span><span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/shopware_error.log
+<span class="w">    </span>CustomLog<span class="w"> </span><span class="si">${</span><span class="nv">APACHE_LOG_DIR</span><span class="si">}</span>/shopware_access.log<span class="w"> </span>combined
+&lt;/VirtualHost&gt;
+</code></pre></div>
+<h4 id="open-port-443">open port 443<a class="headerlink" href="#open-port-443" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">443</span>
+</code></pre></div>
+<h4 id="restart-apache2">restart apache2<a class="headerlink" href="#restart-apache2" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>apache2.service
+</code></pre></div>
+<h4 id="get-installer">get installer<a class="headerlink" href="#get-installer" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/var/www/html
+rm<span class="w"> </span>index.html
+wget<span class="w"> </span>https://github.com/shopware/web-recovery/releases/latest/download/shopware-installer.phar.php
+</code></pre></div>
+<h4 id="set-installer-write-premission">set installer write premission<a class="headerlink" href="#set-installer-write-premission" title="Permanent link">&para;</a></h4>
+<p><code>sudo chown -R www-data:www-data /var/www/html</code></p>
+<h4 id="go-to-url">go to url<a class="headerlink" href="#go-to-url" title="Permanent link">&para;</a></h4>
+<p><code>https://yourdomain.com/shopware-installer.phar.php</code></p>
+<h4 id="follow-the-installer-when-done-you-get-a-404-dont-worry">follow the installer when done you get a 404 dont worry<a class="headerlink" href="#follow-the-installer-when-done-you-get-a-404-dont-worry" title="Permanent link">&para;</a></h4>
+<p><img alt="grafik" src="https://gist.github.com/assets/77645077/dd947c53-cf27-41ec-bec9-eb40ac690e50" /></p>
+<h4 id="goto">goto<a class="headerlink" href="#goto" title="Permanent link">&para;</a></h4>
+<p><code>/var/www/html</code></p>
+<h4 id="and-run">and run<a class="headerlink" href="#and-run" title="Permanent link">&para;</a></h4>
+<p><code>composer install</code></p>
+<h4 id="now-edit">now edit<a class="headerlink" href="#now-edit" title="Permanent link">&para;</a></h4>
+<p><code>/etc/apache2/sites-available/000-default.conf</code></p>
+<h4 id="and-change">and change<a class="headerlink" href="#and-change" title="Permanent link">&para;</a></h4>
+<p><code>/var/www/html</code></p>
+<h4 id="to">to<a class="headerlink" href="#to" title="Permanent link">&para;</a></h4>
+<p><code>/var/www/html/public</code></p>
+<h4 id="restart-apache2_1">restart apache2<a class="headerlink" href="#restart-apache2_1" title="Permanent link">&para;</a></h4>
+<p><code>sudo systemctl restart apache2</code>
+<code>sudo a2enmod rewrite</code></p>
+<h4 id="got-to-yourdomaincom">got to yourdomain.com<a class="headerlink" href="#got-to-yourdomaincom" title="Permanent link">&para;</a></h4>
+<p>and follow the configuration</p>
+<h4 id="block-port-80">block port 80<a class="headerlink" href="#block-port-80" title="Permanent link">&para;</a></h4>
+<p><code>ufw deny 80</code></p>
+<h4 id="edit">edit<a class="headerlink" href="#edit" title="Permanent link">&para;</a></h4>
+<p><code>/var/ww/html/.env</code> <br>
+<code>/var/ww/html/.env.local</code> <br>
+and set APP_URL to shop url yourdomain.com</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="April 13, 2025 13:34:36">April 13, 2025 13:34:36</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../seafile/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🌊 Seafile">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                🌊 Seafile
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../gitea/" class="md-footer__link md-footer__link--next" aria-label="Next: 🐙 Gitea">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🐙 Gitea
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.path", "toc.follow", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
